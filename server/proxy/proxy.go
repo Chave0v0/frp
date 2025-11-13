@@ -27,15 +27,15 @@ import (
 	libio "github.com/fatedier/golib/io"
 	"golang.org/x/time/rate"
 
-	"github.com/fatedier/frp/pkg/config/types"
-	v1 "github.com/fatedier/frp/pkg/config/v1"
-	"github.com/fatedier/frp/pkg/msg"
-	plugin "github.com/fatedier/frp/pkg/plugin/server"
-	"github.com/fatedier/frp/pkg/util/limit"
-	netpkg "github.com/fatedier/frp/pkg/util/net"
-	"github.com/fatedier/frp/pkg/util/xlog"
-	"github.com/fatedier/frp/server/controller"
-	"github.com/fatedier/frp/server/metrics"
+	"github.com/Chave0v0/frp/pkg/config/types"
+	v1 "github.com/Chave0v0/frp/pkg/config/v1"
+	"github.com/Chave0v0/frp/pkg/msg"
+	plugin "github.com/Chave0v0/frp/pkg/plugin/server"
+	"github.com/Chave0v0/frp/pkg/util/limit"
+	netpkg "github.com/Chave0v0/frp/pkg/util/net"
+	"github.com/Chave0v0/frp/pkg/util/xlog"
+	"github.com/Chave0v0/frp/server/controller"
+	"github.com/Chave0v0/frp/server/metrics"
 )
 
 var proxyFactoryRegistry = map[reflect.Type]func(*BaseProxy) Proxy{}

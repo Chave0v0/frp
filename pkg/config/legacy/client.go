@@ -23,8 +23,8 @@ import (
 
 	"gopkg.in/ini.v1"
 
-	legacyauth "github.com/fatedier/frp/pkg/auth/legacy"
-	"github.com/fatedier/frp/pkg/util/util"
+	legacyauth "github.com/Chave0v0/frp/pkg/auth/legacy"
+	"github.com/Chave0v0/frp/pkg/util/util"
 )
 
 // ClientCommonConf is the configuration parsed from ini.

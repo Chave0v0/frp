@@ -6,8 +6,8 @@ import (
 
 	"github.com/onsi/ginkgo/v2"
 
-	"github.com/fatedier/frp/test/e2e/framework"
-	"github.com/fatedier/frp/test/e2e/pkg/request"
+	"github.com/Chave0v0/frp/test/e2e/framework"
+	"github.com/Chave0v0/frp/test/e2e/pkg/request"
 )
 
 const (

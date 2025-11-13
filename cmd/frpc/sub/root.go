@@ -27,13 +27,13 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/fatedier/frp/client"
-	"github.com/fatedier/frp/pkg/config"
-	v1 "github.com/fatedier/frp/pkg/config/v1"
-	"github.com/fatedier/frp/pkg/config/v1/validation"
-	"github.com/fatedier/frp/pkg/featuregate"
-	"github.com/fatedier/frp/pkg/util/log"
-	"github.com/fatedier/frp/pkg/util/version"
+	"github.com/Chave0v0/frp/client"
+	"github.com/Chave0v0/frp/pkg/config"
+	v1 "github.com/Chave0v0/frp/pkg/config/v1"
+	"github.com/Chave0v0/frp/pkg/config/v1/validation"
+	"github.com/Chave0v0/frp/pkg/featuregate"
+	"github.com/Chave0v0/frp/pkg/util/log"
+	"github.com/Chave0v0/frp/pkg/util/version"
 )
 
 var (

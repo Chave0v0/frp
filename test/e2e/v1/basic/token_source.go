@@ -21,9 +21,9 @@ import (
 
 	"github.com/onsi/ginkgo/v2"
 
-	"github.com/fatedier/frp/test/e2e/framework"
-	"github.com/fatedier/frp/test/e2e/framework/consts"
-	"github.com/fatedier/frp/test/e2e/pkg/port"
+	"github.com/Chave0v0/frp/test/e2e/framework"
+	"github.com/Chave0v0/frp/test/e2e/framework/consts"
+	"github.com/Chave0v0/frp/test/e2e/pkg/port"
 )
 
 var _ = ginkgo.Describe("[Feature: TokenSource]", func() {

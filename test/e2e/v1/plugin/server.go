@@ -6,11 +6,11 @@ import (
 
 	"github.com/onsi/ginkgo/v2"
 
-	plugin "github.com/fatedier/frp/pkg/plugin/server"
-	"github.com/fatedier/frp/pkg/transport"
-	"github.com/fatedier/frp/test/e2e/framework"
-	"github.com/fatedier/frp/test/e2e/framework/consts"
-	pluginpkg "github.com/fatedier/frp/test/e2e/pkg/plugin"
+	plugin "github.com/Chave0v0/frp/pkg/plugin/server"
+	"github.com/Chave0v0/frp/pkg/transport"
+	"github.com/Chave0v0/frp/test/e2e/framework"
+	"github.com/Chave0v0/frp/test/e2e/framework/consts"
+	pluginpkg "github.com/Chave0v0/frp/test/e2e/pkg/plugin"
 )
 
 var _ = ginkgo.Describe("[Feature: Server-Plugins]", func() {

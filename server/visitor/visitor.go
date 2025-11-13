@@ -16,15 +16,14 @@ package visitor
 
 import (
 	"fmt"
+	libio "github.com/fatedier/golib/io"
 	"io"
 	"net"
 	"slices"
 	"sync"
 
-	libio "github.com/fatedier/golib/io"
-
-	netpkg "github.com/fatedier/frp/pkg/util/net"
-	"github.com/fatedier/frp/pkg/util/util"
+	netpkg "github.com/Chave0v0/frp/pkg/util/net"
+	"github.com/Chave0v0/frp/pkg/util/util"
 )
 
 type listenerBundle struct {

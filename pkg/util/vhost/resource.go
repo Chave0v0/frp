@@ -20,8 +20,8 @@ import (
 	"net/http"
 	"os"
 
-	"github.com/fatedier/frp/pkg/util/log"
-	"github.com/fatedier/frp/pkg/util/version"
+	"github.com/Chave0v0/frp/pkg/util/log"
+	"github.com/Chave0v0/frp/pkg/util/version"
 )
 
 var NotFoundPagePath = ""
