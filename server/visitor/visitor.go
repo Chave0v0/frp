@@ -16,6 +16,7 @@ package visitor
 
 import (
 	"fmt"
+	v1 "github.com/Chave0v0/frp/pkg/config/v1"
 	libio "github.com/fatedier/golib/io"
 	"io"
 	"net"
@@ -90,6 +91,10 @@ func (vm *Manager) NewConn(name string, conn net.Conn, timestamp int64, signKey 
 			rwc = libio.WithCompression(rwc)
 		}
 		err = l.l.PutConn(netpkg.WrapReadWriteCloserToConn(rwc, conn))
+
+		// 添加Webhook通知
+		v1.NewWebHookClient(v1.WebHookCfg).SendMessage("msg: test message")
+
 	} else {
 		err = fmt.Errorf("custom listener for [%s] doesn't exist", name)
 		return

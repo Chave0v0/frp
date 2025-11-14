@@ -336,6 +336,10 @@ func NewService(cfg *v1.ServerConfig) (*Service, error) {
 		return nil, fmt.Errorf("create nat hole controller error, %v", err)
 	}
 	svr.rc.NatHoleController = nc
+
+	// 创建WebHook配置
+	v1.WebHookCfg = cfg.WebHookConfig
+
 	return svr, nil
 }
 

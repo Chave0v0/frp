@@ -4,6 +4,8 @@ import (
 	"fmt"
 )
 
+var WebHookCfg WebHookConfig
+
 // 定义webhook客户端接口
 type WebHookClient interface {
 	SendMessage(string)
@@ -15,8 +17,8 @@ const (
 )
 
 // 用于获取指定平台的webhook client
-func NewWebHookClient(platform int, config WebHookConfig) WebHookClient {
-	switch platform {
+func NewWebHookClient(config WebHookConfig) WebHookClient {
+	switch config.Platform {
 	case DingTalk:
 		return NewDingTalkWebhookClient(config)
 	default:

@@ -99,7 +99,7 @@ type ServerConfig struct {
 
 	HTTPPlugins []HTTPPluginOptions `json:"httpPlugins,omitempty"`
 
-	webHookConfig WebHookConfig `json:"webHook,omitempty"`
+	WebHookConfig WebHookConfig `json:"webHook,omitempty"`
 }
 
 func (c *ServerConfig) Complete() error {
