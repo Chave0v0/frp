@@ -17,7 +17,6 @@ package v1
 import (
 	"context"
 	"fmt"
-
 	"github.com/samber/lo"
 
 	"github.com/Chave0v0/frp/pkg/config/types"
@@ -99,6 +98,8 @@ type ServerConfig struct {
 	AllowPorts []types.PortsRange `json:"allowPorts,omitempty"`
 
 	HTTPPlugins []HTTPPluginOptions `json:"httpPlugins,omitempty"`
+
+	webHookConfig WebHookConfig `json:"webHook,omitempty"`
 }
 
 func (c *ServerConfig) Complete() error {
